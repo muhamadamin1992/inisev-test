@@ -8,12 +8,12 @@ export default {
     EmailList
   },
   computed: {
-    ...mapState(useEmailsStore, ['inbox'])
+    ...mapState(useEmailsStore, ['archive'])
   }
 }
 </script>
 
 <template>
-  <h1>Inbox</h1>
-  <EmailList :emails="inbox" />
+  <h1>Archive</h1>
+  <EmailList :emails="archive" />
 </template>
